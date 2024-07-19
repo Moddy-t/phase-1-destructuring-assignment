@@ -1,6 +1,55 @@
 const farmAnimals = 'cow horse sheep pig chicken';
+// declare five animal sounds
+const animalSounds ={
+  moo: 'cow',
+  neigh: 'horse',
+  baa: 'sheep',
+  oink: 'pig',
+  cluck: 'chicken'
+};
+const {moo, neigh, baa, oink, cluck} = animalSounds
+
+// declare four traditional animal names
+const animalNames= {
+  bessie: 'cow',
+  dolly: 'sheep',
+  babe: 'pig',
+  little: 'chicken'
+  };
+  const {bessie, dolly, babe, little} = animalNames;
+
+// declare three traditional animal colours
+const animalColours ={
+  blackAndWhite: 'cow',
+  black: 'sheep',
+  pink: 'pig'
+};
+const {blackAndWhite, black, pink}= animalColours;
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// declare seven rainbow colours
+const rainbowColours ={
+  red: 'red',
+  orange: 'orange',
+  yellow: 'yellow',
+  green: 'green',
+  blue: 'blue',
+  indigo: 'indigo',
+  violet: 'violet'
+};
+const {red, orange, yellow, green, blue, indigo, violet} = rainbowColours;
+
+// declare seven rainbow colours using initials
+const rainbowColoursInitials ={
+  r: 'red',
+  o: 'orange',
+  y: 'yellow',
+  g: 'green',
+  b: 'blue',
+  indg: 'indigo',
+  v:'violet'
+}
+const {r, o, y, g, b, indg, v} = rainbowColoursInitials;
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -9,6 +58,7 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+const { muppetName, color, song, job, partner } = muppet;
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +74,8 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+const { songs:{song2, song4}, kermit: { job: nestedJob, partner: nestedPartner } } = nestedMuppet;
+
 
 // Strings
 
@@ -46,3 +98,4 @@ const nestedMuppet = {
 // 7. Use destructuring to assign all variables using the keys as the variable names
 
 // 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+
